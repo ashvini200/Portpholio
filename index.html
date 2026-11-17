@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashvini Hirve | Software Engineer</title>
+    <title>Ashvini Hirve | Software Engineer • Cloud & DevOps</title>
+    <meta name="description" content="Portfolio of Ashvini Hirve — Software Engineer focused on Python, cloud, DevOps, Linux, Kubernetes and scalable applications.">
+    <meta name="theme-color" content="#0b1220">
+    <meta property="og:title" content="Ashvini Hirve | Software Engineer & Cloud DevOps">
+    <meta property="og:description" content="Explore my projects, skills, experience, and engineering journey.">
+    <meta property="og:type" content="website">
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap"
@@ -1524,7 +1529,218 @@
           bottom: 60px;
         }
       }
-    </style>
+    
+/* ==========================================================
+   PROFESSIONAL PORTFOLIO REDESIGN — MIDNIGHT NAVY + AZURE
+   Keeps the original sections, links, content and interactions.
+   ========================================================== */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #60a5fa;
+  --dark-bg: #0b1220;
+  --darker-bg: #0f1a2c;
+  --card-bg: #142238;
+  --text-light: #f1f5f9;
+  --text-muted: #a5b4c8;
+  --border-color: #293b55;
+  --pcb-line-color: transparent;
+  --pcb-dot-color: transparent;
+  --accent-rgb: 59, 130, 246;
+}
+.light-mode {
+  --primary-color: #2563eb;
+  --secondary-color: #1d4ed8;
+  --dark-bg: #f8fafc;
+  --darker-bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-light: #0f172a;
+  --text-muted: #475569;
+  --border-color: #dce5ef;
+  --pcb-line-color: transparent;
+  --pcb-dot-color: transparent;
+  --accent-rgb: 37, 99, 235;
+}
+body { font-family: 'Roboto', sans-serif; letter-spacing: .005em; }
+/* No flashing circuit-board graphics */
+.pcb-design { display: none !important; }
+body:not(.light-mode) { background-image: radial-gradient(ellipse at 85% 10%, rgba(59,130,246,.075), transparent 40%); background-attachment: fixed; }
+.nav-container { background: var(--darker-bg); box-shadow: 0 4px 22px rgba(0,0,0,.10); padding: 12px 0; }
+.nav-links { gap: 5px; }
+.nav-links a { font-size: 14px; font-weight: 500; padding: 10px 12px; border-radius: 8px; }
+.nav-links a:hover { background: rgba(var(--accent-rgb), .10); }
+.nav-links a::after { height: 2px; }
+.nav-right { gap: 12px; }
+.clock-container { min-width: 112px; font-size: 13px; padding: 9px 12px; box-shadow: none; font-family: 'Roboto',sans-serif; font-weight: 500; }
+#digital-clock { letter-spacing: .03em; color: var(--text-muted); }
+.mode-toggle { width: 40px; height: 40px; font-size: 16px; border-radius: 10px; }
+.mode-toggle:hover { transform: none; background: var(--primary-color); color: #fff; }
+.hero-section { grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr); gap: 60px; padding: 92px 0 85px; min-height: min(780px, calc(100vh - 80px)); }
+.text-content { padding-right: 0; }
+.name { font-family: 'Montserrat',sans-serif; font-size: clamp(2.8rem,5vw,4.3rem); letter-spacing: -.055em; font-weight: 700; background: none; color: var(--text-light); margin-bottom: 16px; }
+.hero-section .title { font-size: clamp(1.2rem,2.4vw,1.65rem); color: var(--primary-color); font-weight: 600; border: 0; padding: 0; margin-bottom: 25px; }
+.hero-section .title::after { display: none; }
+.location { font-size: 1rem; margin-bottom: 24px; }
+.description { max-width: 650px; font-size: 1.05rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 30px; }
+.social-links { margin-top: 25px; gap: 12px; flex-wrap: wrap; }
+.social-link { border-radius: 9px; padding: 12px 20px; box-shadow: none; }
+.social-link:first-child { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
+.social-link:hover { transform: translateY(-3px); background: var(--secondary-color); color: #fff; box-shadow: 0 8px 22px rgba(var(--accent-rgb), .17); }
+.image-container { height: 440px; }
+.profile-photo { width: min(100%, 350px); height: 380px; border-radius: 18px; border: 1px solid var(--border-color); box-shadow: 0 22px 65px rgba(0,0,0,.20); }
+.profile-img { object-fit: cover; }
+main { margin-top: 0; }
+section { margin-bottom: 90px; }
+h2 { font-size: clamp(1.7rem,3vw,2.15rem); letter-spacing: -.025em; }
+h2::after { width: 48px; height: 3px; margin-top: 12px; }
+.subtitle { font-style: normal; }
+.education-card-flip .card-front, .education-card-flip .card-back, .skill-card, .project-card-flex, .experience-card, .certification-card { box-shadow: 0 5px 20px rgba(0,0,0,.09); border: 1px solid var(--border-color); border-radius: 14px; }
+.education-card-flip:hover .card-inner { transform: rotateY(180deg); }
+.skill-card:hover, .project-card-flex:hover, .experience-card:hover, .certification-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.14); border-color: rgba(var(--accent-rgb),.55); }
+.project-card-flex:hover { transform: translateY(-4px); }
+.skill-icon { color: var(--primary-color); }
+.project-card-flex .tech-badge, .tech-tag, .cert-badge { border-radius: 7px; background: rgba(var(--accent-rgb), .07); }
+.company-logo, .cert-icon { background: rgba(var(--accent-rgb),.14); color: var(--primary-color); }
+.date-badge, .cert-link, .contact-now-btn { background: var(--primary-color); color: #fff; }
+.contact-now-btn { border-color: var(--primary-color); border-radius: 10px; }
+.contact-links a { border-radius: 10px; }
+.contact-links a:hover, .back-to-top:hover { box-shadow: 0 8px 20px rgba(var(--accent-rgb),.16); }
+.tech-sticker { width: 50px; height: 50px; right: 22px; bottom: 22px; box-shadow: 0 7px 22px rgba(var(--accent-rgb),.22); border-radius: 14px; }
+.tech-sticker:hover { transform: translateY(-3px); }
+.arrow-up { display: none; }
+.chat-bubble { font-size: 20px; }
+.strip-item { border-color: var(--border-color); background: var(--card-bg); }
+.strip-item img { opacity: 1; }
+a:focus-visible, button:focus-visible, .mode-toggle:focus-visible { outline: 3px solid var(--primary-color); outline-offset: 3px; }
+@media (max-width: 992px) {
+  .hero-section { grid-template-columns: 1fr; gap: 18px; padding: 50px 0; text-align: center; }
+  .image-container { order: -1; height: auto; padding: 15px 0 25px; }
+  .profile-photo { width: 280px; height: 300px; }
+  .description { margin-left: auto; margin-right: auto; }
+  .location, .social-links { justify-content: center; }
+}
+@media (max-width: 768px) {
+  .nav-links { gap: 0; top: 64px; }
+  .nav-links a { margin: 0; }
+  .hero-section { padding: 36px 0 50px; }
+  .description { font-size: 1rem; }
+  .tech-sticker { right: 15px; bottom: 18px; }
+  section { margin-bottom: 65px; }
+}
+@media (max-width: 480px) {
+  .name { font-size: 2.45rem; }
+  .profile-photo { width: 240px; height: 260px; }
+  .clock-container { display: none; }
+  .social-links { gap: 10px; }
+  .social-link { padding: 11px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+  .text-content, .image-container { opacity: 1; transform: none; }
+}
+
+
+/* ========================================================
+   PORTFOLIO STUDIO / 2026 — REFINED CLOUD ENGINEER DESIGN
+   Palette: midnight #091424 / surfaces #12233a / azure #5b9cff
+   ======================================================== */
+:root{--primary-color:#60a5fa;--secondary-color:#38bdf8;--dark-bg:#091321;--darker-bg:#0b1829;--card-bg:#112239;--text-light:#f3f7ff;--text-muted:#a8b8cd;--border-color:#263b54;--accent-rgb:96,165,250}
+.light-mode{--primary-color:#2563eb;--secondary-color:#0284c7;--dark-bg:#f4f7fb;--darker-bg:#fff;--card-bg:#fff;--text-light:#15263d;--text-muted:#53647b;--border-color:#dbe4ef;--accent-rgb:37,99,235}
+body{font-family:'Roboto',sans-serif;background:var(--dark-bg);background-image:radial-gradient(ellipse 75% 48% at 88% 10%,rgba(var(--accent-rgb),.09),transparent 65%);background-attachment:fixed}
+::selection{background:rgba(var(--accent-rgb),.32)}
+.reading-progress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#38bdf8,#818cf8);z-index:200;pointer-events:none}
+.nav-container{background:rgba(11,24,41,.91);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border-color);box-shadow:none}
+.light-mode .nav-container{background:rgba(255,255,255,.93)}
+.nav-links a{font-size:14px;font-weight:500;letter-spacing:.01em}
+.nav-links a.is-current{color:var(--primary-color);background:rgba(var(--accent-rgb),.10)}
+.nav-links a:hover{color:var(--primary-color);background:rgba(var(--accent-rgb),.09)}
+.mode-toggle{border-radius:12px;background:var(--card-bg)}
+.hero-section{min-height:650px;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(30px,5vw,85px);padding:105px 0 95px}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;letter-spacing:.13em;color:var(--primary-color);font-weight:700;font-size:.78rem;margin-bottom:22px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#38bdf8;box-shadow:0 0 0 5px rgba(56,189,248,.12)}
+.name{font-size:clamp(3.2rem,6vw,5rem);line-height:1.07;letter-spacing:-.055em;margin-bottom:19px;font-weight:700}
+.hero-section .title{color:var(--text-light);font-size:clamp(1.15rem,2vw,1.6rem);font-weight:500;letter-spacing:-.02em;margin-bottom:25px}
+.title-divider{color:var(--primary-color);padding:0 4px}
+.location{font-size:.95rem;margin-bottom:24px}
+.description{font-size:1.05rem;line-height:1.85;max-width:640px;margin-bottom:24px;color:var(--text-muted)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
+.hero-tags span{padding:7px 12px;border-radius:999px;border:1px solid var(--border-color);background:rgba(var(--accent-rgb),.055);color:var(--text-muted);font-size:.81rem;font-weight:500}
+.social-links{gap:10px;margin-top:22px}
+.social-link{padding:12px 18px;border-radius:10px;font-size:.94rem}
+.social-link:first-child{background:var(--primary-color);color:#08182a;border-color:var(--primary-color);font-weight:700}
+.social-link.hero-project-link{background:var(--primary-color);color:#08182a;border-color:var(--primary-color);font-weight:700}
+.social-link.hero-project-link:hover{background:var(--secondary-color);color:#08182a}
+.social-link:not(.hero-project-link){background:var(--card-bg);color:var(--text-light);border-color:var(--border-color)}
+.social-link:hover{box-shadow:0 12px 30px rgba(var(--accent-rgb),.16);transform:translateY(-3px)}
+.image-container{height:480px;overflow:visible}
+.profile-photo{width:min(100%,360px);height:420px;position:relative;overflow:hidden;border-radius:20px;border:1px solid rgba(var(--accent-rgb),.28);box-shadow:0 24px 80px rgba(0,0,0,.23)}
+.profile-photo:after{content:'';position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
+.profile-img{object-position:center 20%}
+section{scroll-margin-top:105px;margin-bottom:95px}
+h2{font-weight:700;letter-spacing:-.035em}
+h2::after{width:42px;height:3px;border-radius:4px;background:linear-gradient(90deg,var(--primary-color),var(--secondary-color))}
+.subtitle{font-style:normal;line-height:1.65}
+.education-card-flip .card-front,.education-card-flip .card-back,.skill-card,.project-card-flex,.experience-card,.certification-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;box-shadow:0 5px 18px rgba(0,0,0,.09)}
+.project-card-flex{max-width:365px;flex:1 1 290px;min-height:340px;padding:22px}
+.project-card-flex:hover,.skill-card:hover,.experience-card:hover,.certification-card:hover{transform:translateY(-4px);border-color:rgba(var(--accent-rgb),.6);box-shadow:0 16px 38px rgba(0,0,0,.15)}
+.project-card-flex h3{font-size:1.13rem}
+.project-card-flex p{line-height:1.7}
+.project-card-flex .tech-badge,.tech-tag,.cert-badge{border-radius:999px;background:rgba(var(--accent-rgb),.08);color:var(--text-muted)}
+.skill-card{padding:22px 12px}.skill-card:hover{transform:translateY(-4px)}
+.skill-icon{color:var(--primary-color)}
+.company-logo,.cert-icon{background:rgba(var(--accent-rgb),.12);color:var(--primary-color)}
+.date-badge{background:rgba(var(--accent-rgb),.15);color:var(--primary-color);border:1px solid rgba(var(--accent-rgb),.25)}
+.cert-link,.contact-now-btn{background:var(--primary-color);color:#08182a;border-color:var(--primary-color);font-weight:700}
+.cert-link:hover,.contact-now-btn:hover{background:var(--secondary-color);color:#08182a}
+.contact-links a{border-radius:11px}
+.contact-links a:hover{background:var(--primary-color);color:#08182a}
+.tech-sticker{background:var(--primary-color);border-radius:14px;width:49px;height:49px;box-shadow:0 10px 26px rgba(var(--accent-rgb),.22)}
+.tech-sticker .chat-bubble{color:#08182a}.arrow-up{display:none}
+.strip-item{border-radius:10px}.strip-item:hover{transform:translateY(-3px) scale(1.04)}
+footer{background:var(--darker-bg)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--primary-color);outline-offset:3px}
+@media(max-width:992px){.hero-section{grid-template-columns:1fr;text-align:center;gap:15px;min-height:auto;padding:55px 0}.image-container{order:-1;height:auto;padding:10px 0 25px}.profile-photo{height:310px;width:280px}.hero-eyebrow,.location,.social-links,.hero-tags{justify-content:center}.description{margin-left:auto;margin-right:auto}.name{font-size:clamp(2.7rem,7vw,4rem)}}
+@media(max-width:768px){.nav-links{top:64px}.hero-section{padding:35px 0 55px}.hero-tags{gap:7px}.social-links{gap:8px}.social-link{padding:11px 13px}.project-card-flex{max-width:100%}.hero-eyebrow{font-size:.7rem}.description{font-size:1rem}.tech-sticker{bottom:18px;right:16px}}
+@media(max-width:480px){.hero-section .title{font-size:1.1rem}.name{font-size:2.65rem}.profile-photo{width:235px;height:265px}.social-links{flex-wrap:wrap}.social-link{font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.text-content,.image-container{opacity:1!important;transform:none!important}}
+
+    
+/* Cloud community showcase */
+#community{scroll-margin-top:95px;max-width:1200px;margin:0 auto;padding:95px 24px 80px}
+.community-heading{text-align:center;max-width:760px;margin:0 auto 38px}
+.community-kicker{font-size:.75rem;letter-spacing:.16em;color:#60a5fa;font-weight:800;display:inline-flex;gap:10px;align-items:center;margin-bottom:16px}
+#community h2{font-size:clamp(1.9rem,4vw,3.1rem);line-height:1.16;margin:0 0 14px;color:var(--text-color,#eaf2ff);text-transform:none;letter-spacing:-.035em}
+#community .subtitle{margin:0 auto;max-width:700px}
+.community-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;padding:30px;border:1px solid rgba(96,165,250,.20);border-radius:24px;background:linear-gradient(135deg,rgba(59,130,246,.095),rgba(14,165,233,.025) 65%),var(--card-bg,#112239);box-shadow:0 18px 65px rgba(0,0,0,.12)}
+.community-feature-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:17px;min-width:0}
+.community-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(59,130,246,.13);color:#93c5fd;border:1px solid rgba(96,165,250,.25);border-radius:999px;font-size:.78rem;font-weight:700}
+.community-feature h3{font-size:clamp(1.75rem,3vw,2.6rem);line-height:1.2;letter-spacing:-.035em;margin:0;color:var(--text-color,#f0f6ff)}
+.community-feature h3 span{color:#60a5fa}
+.community-feature p{margin:0;line-height:1.75;color:var(--text-secondary,#a6b4ca);font-size:.95rem}
+.community-feature .community-lede{color:var(--text-color,#eaf2ff);font-size:1.05rem}
+.community-facts{display:flex;flex-wrap:wrap;gap:12px 20px;font-size:.83rem;color:var(--text-secondary,#a6b4ca)}
+.community-facts span{display:inline-flex;gap:8px;align-items:center}.community-facts i{color:#60a5fa}
+.community-tags{display:flex;flex-wrap:wrap;gap:8px}.community-tags span{font-size:.75rem;padding:7px 11px;border-radius:8px;background:rgba(96,165,250,.09);border:1px solid rgba(96,165,250,.18);color:var(--text-color,#eaf2ff)}
+.community-event-link{display:inline-flex;align-items:center;gap:10px;padding:12px 17px;border-radius:10px;background:#3b82f6;color:#fff!important;text-decoration:none;font-weight:700;font-size:.85rem;transition:background .2s,transform .2s}
+.community-event-link:hover{background:#2563eb;transform:translateY(-2px)}
+.community-hero-photo{border:0;padding:0;position:relative;display:block;overflow:hidden;min-height:390px;border-radius:17px;cursor:zoom-in;background:#14243c}
+.community-hero-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 35%;transition:transform .35s}
+.community-hero-photo:hover img,.community-gallery-card:hover img{transform:scale(1.045)}
+.community-photo-label{position:absolute;bottom:15px;right:15px;background:rgba(5,16,31,.83);color:white;padding:9px 12px;border-radius:8px;font-size:.75rem;backdrop-filter:blur(6px)}
+.community-gallery-heading{display:flex;align-items:end;justify-content:space-between;margin:36px 0 18px;gap:15px}
+.community-gallery-heading h3{margin:0 0 6px;font-size:1.3rem;color:var(--text-color,#eaf2ff)}.community-gallery-heading p{margin:0;color:var(--text-secondary,#a6b4ca);font-size:.86rem}.community-gallery-heading>span{color:#60a5fa;font-size:.8rem;font-weight:700}
+.community-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.community-gallery-card{display:block;position:relative;aspect-ratio:1.38;border-radius:15px;overflow:hidden;padding:0;border:1px solid rgba(96,165,250,.16);background:#12233b;cursor:zoom-in;text-align:left}
+.community-gallery-card img{height:100%;width:100%;object-fit:cover;transition:transform .35s}.community-gallery-card span{position:absolute;inset:auto 0 0;padding:28px 15px 14px;color:#fff;font-weight:700;font-size:.84rem;background:linear-gradient(transparent,rgba(4,12,24,.92));display:flex;justify-content:space-between;align-items:center}
+.event-lightbox[hidden]{display:none!important}.event-lightbox{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;background:rgba(2,7,16,.96);padding:70px 75px 55px;backdrop-filter:blur(12px)}
+.event-lightbox figure{margin:0;display:flex;align-items:center;flex-direction:column;justify-content:center;gap:14px;max-width:100%;max-height:100%}.event-lightbox figure img{max-width:100%;max-height:75vh;object-fit:contain;border-radius:9px}.event-lightbox figcaption{color:#cbd5e1;text-align:center;font-size:.86rem}
+.event-lightbox button{position:absolute;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);color:#fff;width:42px;height:42px;border-radius:50%;cursor:pointer}.event-lightbox button:hover{background:#2563eb}.event-lightbox-close{top:20px;right:25px}.event-lightbox-prev{left:18px;top:50%}.event-lightbox-next{right:18px;top:50%}
+body.event-gallery-open{overflow:hidden}
+@media(max-width:850px){.community-feature{grid-template-columns:1fr}.community-hero-photo{min-height:350px;aspect-ratio:1.5}.community-feature-copy{gap:14px}}
+@media(max-width:600px){#community{padding:70px 16px 55px}.community-feature{padding:17px;gap:20px;border-radius:17px}.community-hero-photo{min-height:300px}.community-gallery{grid-template-columns:1fr;gap:12px}.community-gallery-card{aspect-ratio:1.65}.community-gallery-heading{align-items:start}.event-lightbox{padding:70px 48px 50px}.event-lightbox-prev{left:5px}.event-lightbox-next{right:5px}}
+/* Light mode compatibility */
+body.light-mode .community-pill{color:#1d4ed8}body.light-mode .community-feature h3 span{color:#2563eb}body.light-mode .community-tags span{color:#1e3a5f}body.light-mode .community-kicker{color:#2563eb}
+
+</style>
   </head>
   <body>
     <!-- PCB Design Background -->
@@ -1538,6 +1754,7 @@
   </div>
 </a>
 
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
     <!-- Navigation Bar -->
     <div class="nav-container">
       <div class="container">
@@ -1549,23 +1766,22 @@
           </button>
 
           <div class="nav-links">
-            <a href="q.html">Home</a>
+            <a href="#home">Home</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#certifications">Certifications</a>
+            <a href="#community">Community</a>
+<a href="#certifications">Certifications</a>
             <a href="#activities">Activities</a>
             <a href="#contact">Contact</a>
           </div>
 
           <div class="nav-right">
-            <div class="clock-container">
-              <div id="digital-clock">00:00:00</div>
-            </div>
-            <div class="mode-toggle" id="mode-toggle">
+            
+            <button type="button" class="mode-toggle" id="mode-toggle" aria-label="Toggle light and dark mode">
               <i class="fas fa-moon"></i>
-            </div>
+            </button>
           </div>
         </nav>
       </div>
@@ -1573,35 +1789,30 @@
 
     <!-- Hero Section -->
     <div class="container">
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="text-content">
           <h1 class="name">Ashvini Hirve</h1>
-          <h2 class="title typing-effect">Software Engineer</h2>
+          <p class="hero-eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEERING · CLOUD & DEVOPS</p>
+          <h2 class="title">Software Engineer <span class="title-divider">/</span> Cloud & DevOps</h2>
           <p class="location">
             <i class="fas fa-map-marker-alt"></i> Based in Mumbai, Maharashtra,
             India
           </p>
-          <p class="description">
-            Hi, I'm Ashvini a Software Engineer driven by a passion for clean
-            code and high-performance systems. Specializing in Python Backend
-            development, I bridge the gap between building intuitive
-            applications and architecting robust Linux-based infrastructure.
-            From designing complex SQL databases to optimizing network-level
-            performance, I build scalable digital solutions where code meets the
-            core of the system
-          </p>
+          <p class="description">I build reliable software and enjoy turning complex infrastructure challenges into practical solutions. My interests span Python backend development, SQL, Linux, containers, Kubernetes and cloud automation. Explore my work, technical experience and the projects behind my engineering journey.</p>
+          <div class="hero-tags"><span>Python & SQL</span><span>Linux</span><span>Docker & Kubernetes</span><span>Cloud & Automation</span></div>
 
           <div class="social-links">
+            <a class="social-link hero-project-link" href="#projects"><i class="fas fa-arrow-right"></i> Explore Projects</a>
             <a
               href="https://www.linkedin.com/in/ashvini-hirve-29960423a/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="social-link"
             >
               <i class="fab fa-linkedin"></i> LinkedIn
             </a>
             <a
               href="https://github.com/ashvini200"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="social-link"
             >
               <i class="fab fa-github"></i> GitHub
@@ -1611,7 +1822,7 @@
 
         <div class="image-container">
           <div class="profile-photo" id="profile-photo">
-          <img src="\Images\cap.jpeg" alt="Ashvini Hirve" class="profile-img" id="profile-img"/>
+          <img src="Images/cap.jpeg" alt="Ashvini Hirve" class="profile-img" id="profile-img"/>
            </div>
         </div>
       </section>
@@ -1640,7 +1851,7 @@
               </div>
               <div class="card-back">
                 <img
-                  src="\Images\jdiet.jpeg"
+                  src="Images/jdiet.jpeg"
                   alt="Bachelor Degree"
                 />
               </div>
@@ -1661,7 +1872,7 @@
               </div>
               <div class="card-back">
                 <img
-                  src="\Images\hsc.jpg"
+                  src="Images/hsc.jpg"
                   alt="HSC Certificate"
                 />
               </div>
@@ -1679,7 +1890,7 @@
               </div>
               <div class="card-back">
                 <img
-                  src="\Images\ssc.jpg"
+                  src="Images/ssc.jpg"
                   alt="SSC Certificate"
                 />
               </div>
@@ -1695,113 +1906,113 @@
           <!-- First strip: Left to Right -->
           <div class="photo-strip strip-1">
             <div class="strip-item">
-              <img src="\Images\1.jpeg" alt="College Memory 1" />
+              <img src="Images/1.jpeg" alt="College Memory 1" />
             </div>
             <div class="strip-item">
-              <img src="\Images\2.jpeg" alt="College Memory 2" />
+              <img src="Images/2.jpeg" alt="College Memory 2" />
             </div>
             <div class="strip-item">
-              <img src="\Images\3.jpeg" alt="College Memory 3" />
+              <img src="Images/3.jpeg" alt="College Memory 3" />
             </div>
             <div class="strip-item">
-              <img src="\Images\4.jpeg" alt="College Memory 4" />
+              <img src="Images/4.jpeg" alt="College Memory 4" />
             </div>
             <div class="strip-item">
-              <img src="\Images\5.jpeg" alt="College Memory 5" />
+              <img src="Images/5.jpeg" alt="College Memory 5" />
             </div>
             <div class="strip-item">
-              <img src="\Images\6.jpeg" alt="College Memory 6" />
+              <img src="Images/6.jpeg" alt="College Memory 6" />
             </div>
             <div class="strip-item">
-              <img src="\Images\7.jpeg" alt="College Memory 7" />
+              <img src="Images/7.jpeg" alt="College Memory 7" />
             </div>
             <div class="strip-item">
-              <img src="\Images\8.jpeg" alt="College Memory 8" />
+              <img src="Images/8.jpeg" alt="College Memory 8" />
             </div>
             <div class="strip-item">
-              <img src="\Images\9.jpeg" alt="College Memory 9" />
+              <img src="Images/9.jpeg" alt="College Memory 9" />
             </div>
             <div class="strip-item">
-              <img src="\Images\10.jpeg" alt="College Memory 10" />
+              <img src="Images/10.jpeg" alt="College Memory 10" />
             </div>
             <div class="strip-item">
-              <img src="\Images\11.jpeg" alt="College Memory 11" />
+              <img src="Images/11.jpeg" alt="College Memory 11" />
             </div>
             <div class="strip-item">
-              <img src="\Images\12.jpeg" alt="College Memory 12" />
+              <img src="Images/12.jpeg" alt="College Memory 12" />
             </div>
             <div class="strip-item">
-              <img src="\Images\13.jpeg" alt="College Memory 13" />
+              <img src="Images/13.jpeg" alt="College Memory 13" />
             </div>
             <div class="strip-item">
-              <img src="\Images\14.jpeg" alt="College Memory 14" />
+              <img src="Images/14.jpeg" alt="College Memory 14" />
             </div>
             <div class="strip-item">
-              <img src="\Images\15.jpeg" alt="College Memory 15" />
+              <img src="Images/15.jpeg" alt="College Memory 15" />
             </div>
             <div class="strip-item">
-              <img src="\Images\16.jpeg" alt="College Memory 16" />
+              <img src="Images/16.jpeg" alt="College Memory 16" />
             </div>
             <div class="strip-item">
-              <img src="\Images\17.jpeg" alt="College Memory 17" />
+              <img src="Images/17.jpeg" alt="College Memory 17" />
             </div>
             <div class="strip-item">
-              <img src="\Images\18.jpeg" alt="College Memory 18" />
+              <img src="Images/18.jpeg" alt="College Memory 18" />
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="strip-item">
-              <img src="\Images\1.jpeg" alt="College Memory 1" />
+              <img src="Images/1.jpeg" alt="College Memory 1" />
             </div>
             <div class="strip-item">
-              <img src="\Images\2.jpeg" alt="College Memory 2" />
+              <img src="Images/2.jpeg" alt="College Memory 2" />
             </div>
             <div class="strip-item">
-              <img src="\Images\3.jpeg" alt="College Memory 3" />
+              <img src="Images/3.jpeg" alt="College Memory 3" />
             </div>
             <div class="strip-item">
-              <img src="\Images\4.jpeg" alt="College Memory 4" />
+              <img src="Images/4.jpeg" alt="College Memory 4" />
             </div>
             <div class="strip-item">
-              <img src="\Images\5.jpeg" alt="College Memory 5" />
+              <img src="Images/5.jpeg" alt="College Memory 5" />
             </div>
             <div class="strip-item">
-              <img src="\Images\6.jpeg" alt="College Memory 6" />
+              <img src="Images/6.jpeg" alt="College Memory 6" />
             </div>
             <div class="strip-item">
-              <img src="\Images\7.jpeg" alt="College Memory 7" />
+              <img src="Images/7.jpeg" alt="College Memory 7" />
             </div>
             <div class="strip-item">
-              <img src="\Images\8.jpeg" alt="College Memory 8" />
+              <img src="Images/8.jpeg" alt="College Memory 8" />
             </div>
             <div class="strip-item">
-              <img src="\Images\9.jpeg" alt="College Memory 9" />
+              <img src="Images/9.jpeg" alt="College Memory 9" />
             </div>
             <div class="strip-item">
-              <img src="\Images\10.jpeg" alt="College Memory 10" />
+              <img src="Images/10.jpeg" alt="College Memory 10" />
             </div>
             <div class="strip-item">
-              <img src="\Images\11.jpeg" alt="College Memory 11" />
+              <img src="Images/11.jpeg" alt="College Memory 11" />
             </div>
             <div class="strip-item">
-              <img src="\Images\12.jpeg" alt="College Memory 12" />
+              <img src="Images/12.jpeg" alt="College Memory 12" />
             </div>
             <div class="strip-item">
-              <img src="\Images\13.jpeg" alt="College Memory 13" />
+              <img src="Images/13.jpeg" alt="College Memory 13" />
             </div>
             <div class="strip-item">
-              <img src="\Images\14.jpeg" alt="College Memory 14" />
+              <img src="Images/14.jpeg" alt="College Memory 14" />
             </div>
             <div class="strip-item">
-              <img src="\Images\15.jpeg" alt="College Memory 15" />
+              <img src="Images/15.jpeg" alt="College Memory 15" />
             </div>
             <div class="strip-item">
-              <img src="\Images\16.jpeg" alt="College Memory 16" />
+              <img src="Images/16.jpeg" alt="College Memory 16" />
             </div>
             <div class="strip-item">
-              <img src="\Images\17.jpeg" alt="College Memory 17" />
+              <img src="Images/17.jpeg" alt="College Memory 17" />
             </div>
             <div class="strip-item">
-              <img src="\Images\18.jpeg" alt="College Memory 18" />
+              <img src="Images/18.jpeg" alt="College Memory 18" />
             </div>
           </div>
         </div>
@@ -1810,113 +2021,113 @@
           <!-- Second strip: Right to Left -->
           <div class="photo-strip strip-2">
             <div class="strip-item">
-              <img src="\Images\1.jpeg" alt="College Memory 1" />
+              <img src="Images/1.jpeg" alt="College Memory 1" />
             </div>
             <div class="strip-item">
-              <img src="\Images\2.jpeg" alt="College Memory 2" />
+              <img src="Images/2.jpeg" alt="College Memory 2" />
             </div>
             <div class="strip-item">
-              <img src="\Images\3.jpeg" alt="College Memory 3" />
+              <img src="Images/3.jpeg" alt="College Memory 3" />
             </div>
             <div class="strip-item">
-              <img src="\Images\4.jpeg" alt="College Memory 4" />
+              <img src="Images/4.jpeg" alt="College Memory 4" />
             </div>
             <div class="strip-item">
-              <img src="\Images\5.jpeg" alt="College Memory 5" />
+              <img src="Images/5.jpeg" alt="College Memory 5" />
             </div>
             <div class="strip-item">
-              <img src="\Images\6.jpeg" alt="College Memory 6" />
+              <img src="Images/6.jpeg" alt="College Memory 6" />
             </div>
             <div class="strip-item">
-              <img src="\Images\7.jpeg" alt="College Memory 7" />
+              <img src="Images/7.jpeg" alt="College Memory 7" />
             </div>
             <div class="strip-item">
-              <img src="\Images\8.jpeg" alt="College Memory 8" />
+              <img src="Images/8.jpeg" alt="College Memory 8" />
             </div>
             <div class="strip-item">
-              <img src="\Images\9.jpeg" alt="College Memory 9" />
+              <img src="Images/9.jpeg" alt="College Memory 9" />
             </div>
             <div class="strip-item">
-              <img src="\Images\10.jpeg" alt="College Memory 10" />
+              <img src="Images/10.jpeg" alt="College Memory 10" />
             </div>
             <div class="strip-item">
-              <img src="\Images\11.jpeg" alt="College Memory 11" />
+              <img src="Images/11.jpeg" alt="College Memory 11" />
             </div>
             <div class="strip-item">
-              <img src="\Images\12.jpeg" alt="College Memory 12" />
+              <img src="Images/12.jpeg" alt="College Memory 12" />
             </div>
             <div class="strip-item">
-              <img src="\Images\13.jpeg" alt="College Memory 13" />
+              <img src="Images/13.jpeg" alt="College Memory 13" />
             </div>
             <div class="strip-item">
-              <img src="\Images\14.jpeg" alt="College Memory 14" />
+              <img src="Images/14.jpeg" alt="College Memory 14" />
             </div>
             <div class="strip-item">
-              <img src="\Images\15.jpeg" alt="College Memory 15" />
+              <img src="Images/15.jpeg" alt="College Memory 15" />
             </div>
             <div class="strip-item">
-              <img src="\Images\16.jpeg" alt="College Memory 16" />
+              <img src="Images/16.jpeg" alt="College Memory 16" />
             </div>
             <div class="strip-item">
-              <img src="\Images\17.jpeg" alt="College Memory 17" />
+              <img src="Images/17.jpeg" alt="College Memory 17" />
             </div>
             <div class="strip-item">
-              <img src="\Images\18.jpeg" alt="College Memory 18" />
+              <img src="Images/18.jpeg" alt="College Memory 18" />
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="strip-item">
-              <img src="\Images\1.jpeg" alt="College Memory 1" />
+              <img src="Images/1.jpeg" alt="College Memory 1" />
             </div>
             <div class="strip-item">
-              <img src="\Images\2.jpeg" alt="College Memory 2" />
+              <img src="Images/2.jpeg" alt="College Memory 2" />
             </div>
             <div class="strip-item">
-              <img src="\Images\3.jpeg" alt="College Memory 3" />
+              <img src="Images/3.jpeg" alt="College Memory 3" />
             </div>
             <div class="strip-item">
-              <img src="\Images\4.jpeg" alt="College Memory 4" />
+              <img src="Images/4.jpeg" alt="College Memory 4" />
             </div>
             <div class="strip-item">
-              <img src="\Images\5.jpeg" alt="College Memory 5" />
+              <img src="Images/5.jpeg" alt="College Memory 5" />
             </div>
             <div class="strip-item">
-              <img src="\Images\6.jpeg" alt="College Memory 6" />
+              <img src="Images/6.jpeg" alt="College Memory 6" />
             </div>
             <div class="strip-item">
-              <img src="\Images\7.jpeg" alt="College Memory 7" />
+              <img src="Images/7.jpeg" alt="College Memory 7" />
             </div>
             <div class="strip-item">
-              <img src="\Images\8.jpeg" alt="College Memory 8" />
+              <img src="Images/8.jpeg" alt="College Memory 8" />
             </div>
             <div class="strip-item">
-              <img src="\Images\9.jpeg" alt="College Memory 9" />
+              <img src="Images/9.jpeg" alt="College Memory 9" />
             </div>
             <div class="strip-item">
-              <img src="\Images\10.jpeg" alt="College Memory 10" />
+              <img src="Images/10.jpeg" alt="College Memory 10" />
             </div>
             <div class="strip-item">
-              <img src="\Images\11.jpeg" alt="College Memory 11" />
+              <img src="Images/11.jpeg" alt="College Memory 11" />
             </div>
             <div class="strip-item">
-              <img src="\Images\12.jpeg" alt="College Memory 12" />
+              <img src="Images/12.jpeg" alt="College Memory 12" />
             </div>
             <div class="strip-item">
-              <img src="\Images\13.jpeg" alt="College Memory 13" />
+              <img src="Images/13.jpeg" alt="College Memory 13" />
             </div>
             <div class="strip-item">
-              <img src="\Images\14.jpeg" alt="College Memory 14" />
+              <img src="Images/14.jpeg" alt="College Memory 14" />
             </div>
             <div class="strip-item">
-              <img src="\Images\15.jpeg" alt="College Memory 15" />
+              <img src="Images/15.jpeg" alt="College Memory 15" />
             </div>
             <div class="strip-item">
-              <img src="\Images\16.jpeg" alt="College Memory 16" />
+              <img src="Images/16.jpeg" alt="College Memory 16" />
             </div>
             <div class="strip-item">
-              <img src="\Images\17.jpeg" alt="College Memory 17" />
+              <img src="Images/17.jpeg" alt="College Memory 17" />
             </div>
             <div class="strip-item">
-              <img src="\Images\18.jpeg" alt="College Memory 18" />
+              <img src="Images/18.jpeg" alt="College Memory 18" />
             </div>
           </div>
         </div>
@@ -2043,13 +2254,13 @@
             <div class="project-images">
               <div class="project-img">
                 <img
-                  src="\Images\p1.jpg"
+                  src="Images/p1.jpg"
                   alt="CNC Machine"
                 />
               </div>
               <div class="project-img">
                 <img
-                  src="\Images\p2.png"
+                  src="Images/p2.png"
                   alt="CNC Design"
                 />
               </div>
@@ -2071,13 +2282,13 @@
             <div class="project-images">
               <div class="project-img">
                 <img
-                  src="\Images\p3.png"
+                  src="Images/p3.png"
                   alt="Python Code"
                 />
               </div>
               <div class="project-img">
                 <img
-                  src="\Images\p4.png"
+                  src="Images/p4.png"
                   alt="Python Projects"
                 />
               </div>
@@ -2092,19 +2303,19 @@
               <span class="tech-badge">Pandas</span>
               <span class="tech-badge">Tkinter</span>
             </div>
-            <a href="https://github.com/ashvini200/python_projects" target="_blank">View on GitHub</a>
+            <a href="https://github.com/ashvini200/python_projects" target="_blank" rel="noopener noreferrer">View on GitHub</a>
           </div>
           <div class="project-card-flex">
             <div class="project-images">
               <div class="project-img">
                 <img
-                  src="\Images\p9.png"
+                  src="Images/p9.png"
                   alt="Arduino Board"
                 />
               </div>
               <div class="project-img">
                 <img
-                  src="\Images\p10.png"
+                  src="Images/p10.png"
                   alt="Bluetooth"
                 />
               </div>
@@ -2118,19 +2329,19 @@
               <span class="tech-badge">Arduino</span>
               <span class="tech-badge">Bluetooth</span>
             </div>
-            <a href="https://github.com/ashvini200/Sync_alert_notice_board" target="_blank">GitHub Repository</a>
+            <a href="https://github.com/ashvini200/Sync_alert_notice_board" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </div>
           <div class="project-card-flex">
             <div class="project-images">
               <div class="project-img">
                 <img
-                  src="\Images\p5.png"
+                  src="Images/p5.png"
                   alt="ESP32-CAM"
                 />
               </div>
               <div class="project-img">
                 <img
-                  src="\Images\p6.png"
+                  src="Images/p6.png"
                   alt="Face Recognition"
                 />
               </div>
@@ -2144,19 +2355,19 @@
               <span class="tech-badge">ESP32-CAM</span>
               <span class="tech-badge">TensorFlow Lite</span>
             </div>
-            <a href="https://github.com/ashvini200/ESP-32_CAM_Project" target="_blank">GitHub Repository</a>
+            <a href="https://github.com/ashvini200/ESP-32_CAM_Project" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </div>
           <div class="project-card-flex">
             <div class="project-images">
               <div class="project-img">
                 <img
-                  src="\Images\p7.png"
+                  src="Images/p7.png"
                   alt="Website Design"
                 />
               </div>
               <div class="project-img">
                 <img
-                  src="\Images\p8.png"
+                  src="Images/p8.png"
                   alt="Coding Class"
                 />
               </div>
@@ -2171,7 +2382,7 @@
               <span class="tech-badge">CSS</span>
               <span class="tech-badge">JavaScript</span>
             </div>
-            <a href="https://github.com/ashvini200/Web_Development_projects" target="_blank">GitHub Repository</a>
+            <a href="https://github.com/ashvini200/Web_Development_projects" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </div>
         </div>
       </section>
@@ -2217,25 +2428,25 @@
               <div class="experience-photos">
                 <div class="photo-item">
                   <img
-                    src="\Images\cap.jpeg"
+                    src="Images/cap.jpeg"
                     alt="Team Collaboration"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\cap3.jpeg"
+                    src="Images/cap3.jpeg"
                     alt="Software Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\cap4.jpeg"
+                    src="Images/cap4.jpeg"
                     alt="Software Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\cap2.jpeg"
+                    src="Images/cap2.jpeg"
                     alt="Software Development"
                   />
                 </div>
@@ -2271,25 +2482,25 @@
               <div class="experience-photos">
                 <div class="photo-item">
                   <img
-                    src="\Images\17.jpeg"
+                    src="Images/17.jpeg"
                     alt="Web Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\think.jpeg"
+                    src="Images/think.jpeg"
                     alt="Web Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\think2.jpeg"
+                    src="Images/think2.jpeg"
                     alt="Web Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\8.jpeg"
+                    src="Images/8.jpeg"
                     alt="Python Coding"
                   />
                 </div>
@@ -2324,25 +2535,25 @@
               <div class="experience-photos">
                 <div class="photo-item">
                   <img
-                    src="\Images\motion2.png"
+                    src="Images/motion2.png"
                     alt="Python Development"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\motion1.png"
+                    src="Images/motion1.png"
                     alt="Coding"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\python.jpg"
+                    src="Images/python.jpg"
                     alt="Coding"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\python3.jpg"
+                    src="Images/python3.jpg"
                     alt="Coding"
                   />
                 </div>
@@ -2376,25 +2587,25 @@
               <div class="experience-photos">
                 <div class="photo-item">
                   <img
-                    src="\Images\ssg1.jpeg"
+                    src="Images/ssg1.jpeg"
                     alt="Embedded Systems"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\esp.jpeg"
+                    src="Images/esp.jpeg"
                     alt="Embedded Systems"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\esp2.png"
+                    src="Images/esp2.png"
                     alt="Embedded Systems"
                   />
                 </div>
                 <div class="photo-item">
                   <img
-                    src="\Images\ssg2.jpeg"
+                    src="Images/ssg2.jpeg"
                     alt="Microcontrollers"
                   />
                 </div>
@@ -2410,7 +2621,43 @@
       </section>
 
       <!-- Certifications Section with Drone Sticker -->
-      <section id="certifications">
+      
+<!-- Cloud community event: verified participation details supplied by portfolio owner -->
+<section id="community" class="community-section" aria-labelledby="community-title">
+  <div class="community-heading"><span class="community-kicker"><i class="fas fa-cloud"></i> CLOUD COMMUNITY & CONTINUOUS LEARNING</span>
+    <h2 id="community-title">Beyond the code. Into the community.</h2>
+    <p class="subtitle">Learning, connecting, and staying curious about cloud-native engineering.</p>
+  </div>
+  <div class="community-feature">
+    <div class="community-feature-copy">
+      <span class="community-pill"><i class="fas fa-calendar-check"></i> Attended · 15 November 2026</span>
+      <h3>Cloud Community Days 2026 <span>Mumbai</span></h3>
+      <p class="community-lede">A day of cloud-focused technical sessions, community learning, and conversations with developers and technology enthusiasts.</p>
+      <div class="community-facts"><span><i class="fas fa-map-marker-alt"></i> The LaLiT Mumbai, India</span><span><i class="fas fa-users"></i> GDG Cloud Mumbai × GDG MAD</span></div>
+      <p>Attending this community event was an opportunity to explore the evolving cloud ecosystem, exchange ideas, and connect my interests in software engineering, DevOps, and infrastructure with the broader developer community.</p>
+      <div class="community-tags"><span>Cloud Computing</span><span>DevOps</span><span>Developer Community</span><span>Continuous Learning</span></div>
+      <a class="community-event-link" href="https://luma.com/tsbs46dq" target="_blank" rel="noopener noreferrer">View event page <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    </div>
+    <button type="button" class="community-hero-photo event-photo" data-event-photo="0" aria-label="Enlarge photograph from Cloud Community Days Mumbai">
+      <img src="Images/gdc1.png" alt="Ashvini at Cloud Community Days 2026 Mumbai stage" loading="lazy" decoding="async" />
+      <span class="community-photo-label"><i class="fas fa-expand"></i> View photo</span>
+    </button>
+  </div>
+  <div class="community-gallery-heading"><div><h3>Moments from the event</h3><p>Three highlights from Cloud Community Days 2026 Mumbai</p></div><span>01 / 03</span></div>
+  <div class="community-gallery">
+    <button type="button" class="community-gallery-card event-photo" data-event-photo="0" aria-label="Open event stage photograph"><img src="Images/gdc1.png" alt="Cloud Community Days 2026 event stage" loading="lazy" decoding="async" /><span>At the event <i class="fas fa-arrow-up-right-from-square"></i></span></button>
+    <button type="button" class="community-gallery-card event-photo" data-event-photo="1" aria-label="Open event selfie"><img src="Images/gdc selfi.png" alt="Ashvini's selfie at Cloud Community Days 2026" loading="lazy" decoding="async" /><span>Community moments <i class="fas fa-arrow-up-right-from-square"></i></span></button>
+    <button type="button" class="community-gallery-card event-photo" data-event-photo="2" aria-label="Open event display photograph"><img src="Images/gdc2.jpeg" alt="Cloud Community Days 2026 event display" loading="lazy" decoding="async" /><span>Cloud community <i class="fas fa-arrow-up-right-from-square"></i></span></button>
+  </div>
+</section>
+<div class="event-lightbox" id="event-lightbox" role="dialog" aria-modal="true" aria-label="Event photo gallery" aria-hidden="true" hidden>
+  <button type="button" class="event-lightbox-close" aria-label="Close gallery"><i class="fas fa-times"></i></button>
+  <button type="button" class="event-lightbox-prev" aria-label="Previous photograph"><i class="fas fa-chevron-left"></i></button>
+  <figure><img id="event-lightbox-img" alt="" /><figcaption id="event-lightbox-caption"></figcaption></figure>
+  <button type="button" class="event-lightbox-next" aria-label="Next photograph"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<section id="certifications">
         <h2>CERTIFICATIONS</h2>
         <p class="subtitle">
           Professional courses and workshops I have completed
@@ -2628,7 +2875,7 @@
               <span class="tech-badge">IoT</span>
               <span class="tech-badge">Monitoring System</span>
             </div>
-            <a href="https://www.researchgate.net/publication/377249781_Vision_Safe_ESP32_Cam-Based_Eyeglass_Monitoring_Solution_with_Eyewear_Detection_System" target="_blank">View Publication</a>
+            <a href="https://www.researchgate.net/publication/377249781_Vision_Safe_ESP32_Cam-Based_Eyeglass_Monitoring_Solution_with_Eyewear_Detection_System" target="_blank" rel="noopener noreferrer">View Publication</a>
           </div>
           <div class="project-card-flex">
             <h3>Sync Alert Notice Board: Real-Time Notification System</h3>
@@ -2638,7 +2885,7 @@
               <span class="tech-badge">Bluetooth</span>
               <span class="tech-badge">Notification System</span>
             </div>
-            <a href="https://www.researchgate.net/publication/381554420_Sync_Alert_Notice_Board" target="_blank">View Publication</a>
+            <a href="https://www.researchgate.net/publication/381554420_Sync_Alert_Notice_Board" target="_blank" rel="noopener noreferrer">View Publication</a>
           </div>
           <div class="project-card-flex">
             <h3>
@@ -2651,7 +2898,7 @@
               <span class="tech-badge">Arduino</span>
               <span class="tech-badge">Writing Machine</span>
             </div>
-            <a href="https://ijireeice.com/papers/cnc-based-writing-and-drawing-machine/" target="_blank">View Publication</a>
+            <a href="https://ijireeice.com/papers/cnc-based-writing-and-drawing-machine/" target="_blank" rel="noopener noreferrer">View Publication</a>
           </div>
         </div>
       </section>
@@ -2677,7 +2924,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/1c5bIm6GY2_AcMLIRJZqYuM3XoSPHMqiM/view?usp=drive_link
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Certificate</a
             >
           </div>
@@ -2693,7 +2940,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/12LRnO8mtnNMgRiu3md2ZxjAQoy1mLmmu/view?usp=drive_link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Certificate</a
             >
           </div>
@@ -2709,7 +2956,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/1ycwRSZXq3W1kfxqXCZySHDfpMRbsE1SF/view?usp=drive_link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Certificate</a
             >
           </div>
@@ -2725,7 +2972,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/1c-MihRowXg4h4DQKXA-Kdpun6SpkDg7E/view?usp=drive_link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Certificate</a
             >
           </div>
@@ -2741,7 +2988,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/1sEbkfPn4R2C9bi5UQYGjH2M75CAWGXbt/view?usp=drive_link"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Certificate</a
             >
           </div>
@@ -2757,7 +3004,7 @@
             </div>
             <a
               href="https://drive.google.com/file/d/1QygT9EA5z6eI6-i78gTgVpmmnlAFS4aC/view?usp=drive_link
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               >View Details</a
             >
           </div>
@@ -2775,7 +3022,7 @@
           <div class="contact-links">
             <a
               href="https://www.linkedin.com/in/ashvini-hirve-29960423a"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-linkedin"></i> LinkedIn
               <i class="fas fa-arrow-right arrow"></i
             ></a>
@@ -2787,7 +3034,7 @@
               ><i class="fas fa-phone"></i> Call Me
               <i class="fas fa-arrow-right arrow"></i
             ></a>
-            <a href="https://github.com/ashvini200" target="_blank"
+            <a href="https://github.com/ashvini200" target="_blank" rel="noopener noreferrer"
               ><i class="fab fa-github"></i> GitHub
               <i class="fas fa-arrow-right arrow"></i
             ></a>
@@ -2798,7 +3045,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>© 2025 Ashvini Hirve. All Rights Reserved.</p>
+      <p>© 2026 Ashvini Hirve. All Rights Reserved.</p>
       <p>Designed & Developed by Ashvini Hirve</p>
       <a href="#" class="back-to-top">Back to Top</a>
     </footer>
@@ -2817,14 +3064,15 @@
       }
 
       // Update clock immediately and then every second
-      updateClock();
-      setInterval(updateClock, 1000);
+      // Clock intentionally removed for a cleaner professional navigation.
 
       // Mode Toggle
       const modeToggle = document.getElementById("mode-toggle");
       const modeIcon = modeToggle.querySelector("i");
 
+      if (localStorage.getItem("ashvini-theme") === "light") { document.body.classList.add("light-mode"); modeIcon.className = "fas fa-sun"; }
       modeToggle.addEventListener("click", function () {
+        localStorage.setItem("ashvini-theme", document.body.classList.contains("light-mode") ? "dark" : "light");
         document.body.classList.toggle("light-mode");
 
         if (document.body.classList.contains("light-mode")) {
@@ -2907,7 +3155,7 @@ const img = document.getElementById("profile-img");
 if (img) {
   setTimeout(function () {
     if (!img.complete || img.naturalHeight === 0) {
-      showPlaceholder();
+      img.style.visibility = "visible";
     }
   }, 3000);
 }
@@ -2994,9 +3242,9 @@ window.addEventListener("scroll", () => {
     scrollBtn.style.display = "flex"; // Keep "flex" if you want it always visible
   }
 });
-      // Typing effect for title
+      // Typing effect for title (unused by the redesigned hero)
       function initTypingEffect() {
-        const title = document.querySelector(".title");
+        const title = document.querySelector(".typing-effect");
         if (title) {
           const text = title.textContent;
           title.textContent = "";
@@ -3015,22 +3263,21 @@ window.addEventListener("scroll", () => {
 
       // Initialize on load
       window.addEventListener("load", function () {
-        generatePCBDesign();
-        initTypingEffect();
+        // Static hero heading and subtle CSS background improve readability.
 
         // Check if image loads successfully
         const img = document.getElementById("profile-img");
         if (img) {
           setTimeout(function () {
             if (!img.complete || img.naturalHeight === 0) {
-              showPlaceholder();
+              img.style.visibility = "visible";
             }
           }, 3000);
         }
       });
 
       // Regenerate PCB design on resize
-      window.addEventListener("resize", generatePCBDesign);
+
 
       // Add scroll animation for project cards
       const projectCards = document.querySelectorAll(".project-card-flex");
@@ -3052,6 +3299,48 @@ window.addEventListener("scroll", () => {
         card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
         projectObserver.observe(card);
       });
-    </script>
+      // Reading progress and current-section navigation.
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = (total > 0 ? window.scrollY / total * 100 : 0) + '%';
+      };
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+      const navItems = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+      const sectionTargets = navItems.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      if ('IntersectionObserver' in window) {
+        const activeObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            navItems.forEach(a => a.classList.toggle('is-current', a.getAttribute('href') === '#' + entry.target.id));
+          });
+        }, {rootMargin:'-20% 0px -65% 0px'});
+        sectionTargets.forEach(section => activeObserver.observe(section));
+      }
+    
+// Accessible, keyboard-friendly event photo lightbox.
+(() => {
+  const photos = [
+    {src:'Images/gdc1.png',alt:'Cloud Community Days 2026 Mumbai stage',caption:'Cloud Community Days 2026 · Mumbai'},
+    {src:'Images/gdc selfi.png',alt:'Ashvini at Cloud Community Days 2026',caption:'A moment from the developer community'},
+    {src:'Images/gdc2.jpeg',alt:'Cloud Community Days 2026 event display',caption:'Cloud Community Days · 15 November 2026'}
+  ];
+  const dialog=document.getElementById('event-lightbox');
+  const image= document.getElementById('event-lightbox-img');
+  const caption=document.getElementById('event-lightbox-caption');
+  if(!dialog||!image||!caption) return;
+  let current=0,returnFocus=null;
+  const show=(index)=>{current=(index+photos.length)%photos.length;image.src=photos[current].src;image.alt=photos[current].alt;caption.textContent=photos[current].caption;};
+  const close=()=>{dialog.hidden=true;dialog.setAttribute('aria-hidden','true');document.body.classList.remove('event-gallery-open');if(returnFocus)returnFocus.focus();};
+  document.querySelectorAll('.event-photo').forEach(btn=>btn.addEventListener('click',()=>{returnFocus=btn;show(Number(btn.dataset.eventPhoto));dialog.hidden=false;dialog.setAttribute('aria-hidden','false');document.body.classList.add('event-gallery-open');dialog.querySelector('.event-lightbox-close').focus();}));
+  dialog.querySelector('.event-lightbox-close').addEventListener('click',close);
+  dialog.querySelector('.event-lightbox-prev').addEventListener('click',()=>show(current-1));
+  dialog.querySelector('.event-lightbox-next').addEventListener('click',()=>show(current+1));
+  dialog.addEventListener('click',e=>{if(e.target===dialog)close();});
+  document.addEventListener('keydown',e=>{if(dialog.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1);if(e.key==='Tab'){const buttons=[...dialog.querySelectorAll('button')];const first=buttons[0],last=buttons[buttons.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}});
+})();
+
+</script>
   </body>
 </html>
